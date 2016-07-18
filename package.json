@@ -1,0 +1,28 @@
+{
+  "name": "responsive",
+  "version": "1.0.0",
+  "description": "响应式",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YzPaul3/responsiveWeb.git"
+  },
+  "keywords": [
+    "responsive"
+  ],
+  "author": "Eddie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YzPaul3/responsiveWeb/issues"
+  },
+  "homepage": "https://github.com/YzPaul3/responsiveWeb#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-notify": "^2.2.0"
+  }
+}

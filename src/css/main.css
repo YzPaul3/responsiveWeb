@@ -152,13 +152,28 @@ header .top ul li a {
     padding: 0 1.5rem;
 }
 
+@media only screen and (max-width: 50em) {
+    header .top ul li a {
+        padding: 0 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 30em) {
+    header .top .tel,
+    header .top ul li:nth-child(3),
+    header .top ul li:nth-child(4) {
+        display: none;
+    }
+}
+
 header .main {
     padding: 0;
 }
 
 header .main .brand {
     float: left;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 0;
 }
 
 header .main ul {
@@ -172,7 +187,7 @@ header .main ul li {
 
 header .main ul li a {
     display: inline-block;
-    padding: 0 3rem;
+    padding: 0 2.5rem;
     line-height: 5.5rem;
     font-size: 1.6rem;
     font-weight: bold;
@@ -185,6 +200,45 @@ header .main ul li a:active,
 header .main ul li a:active {
     color: #ffb300;
     background-color: #f8f6f1;
+}
+
+
+
+@media only screen and (max-width: 50em) {
+    header .main .brand {
+        float: none;
+        display: block;
+        padding: 0;
+        margin: 1.5rem auto 0.5rem;
+        text-align: center;
+    }
+
+    header .main ul {
+        text-align: center;
+    }
+
+    header .main ul li {
+        border: none;
+    }
+
+    header .main ul li a {
+        padding: 0 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    header .main ul li {
+        line-height: 3rem;
+    }    
+
+    header .main ul li:first-child {
+        display: none;
+    }
+
+    header .main ul li a {
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
 }
 
 /* 网站主要内容 */
@@ -238,6 +292,51 @@ header .main ul li a:active {
     color: #fff;
 }
 
+@media only screen and (max-width: 50rem) {
+
+    .trans-content {
+        max-width: 96%;
+    }
+
+    .trans-data {
+        padding: 1rem 0.25rem;
+    }
+
+    .trans-data span {
+        font-size: 1.2rem;
+    }
+
+    .trans-data span.trans-money {
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0;
+        letter-spacing: inherit;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .trans-report a {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 30rem) {
+
+    .transaction {
+        padding: 0.5rem 0;
+    }
+
+    .trans-data,
+    .trans-report {
+        float: none;
+        text-align: center;
+    }
+
+    .trans-data,
+    .trans-report a {
+        padding: 0;
+    }
+}
 /* 滚动广告 */
 .ad {
     display: none;
@@ -282,6 +381,39 @@ header .main ul li a:active {
     color: #999;
 }
 
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
+
+    .feature .item h3,
+    .feature .item p {
+        display: block;
+        width: 100%;
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .feature .item p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    
+    .feature {
+        width: 96%;
+        margin: 1rem auto;
+    }
+
+    .feature .item {
+        display: block;
+        width: auto;
+    }
+
+    .feature .item + .item {
+        margin: 1rem 0 0;
+    }
+
+}
+
 /* 公告信息 */
 
 .notice {
@@ -323,6 +455,24 @@ header .main ul li a:active {
     width: auto;
     margin-right: 2rem;
     color: #ff9900;
+}
+
+@media only screen and (max-width: 30em) {
+
+    .notice {
+        width: 96%;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+    }
+
+    .notice a {
+        margin-left: 0.8rem;
+    }
+
+    .notice a span {
+        display: none;
+    }
+
 }
 
 /* 产品列表 */
@@ -456,6 +606,94 @@ header .main ul li a:active {
     cursor: not-allowed;
 }
 
+@media only screen and (max-width: 50em) {
+
+    .product h2 {
+        float: none;
+        width: 100%;
+        margin-top: 2rem;
+        font-size: 2.2rem;
+    }
+    
+    .product h2 em:first-child {
+        margin-top: 0;
+    }
+
+    .product h2 em {
+        display: inline;
+        font-size: 1.2rem;
+    }
+
+    .product .product-content {
+        float: none;
+        width: 100%;
+        border: none;
+    }
+
+    .product .product-content .item h3 {
+        margin-bottom: 0;
+    }
+
+    .product .product-content .item h3 em {
+        font-size: 2.4rem;
+    }
+
+    .product .product-content .item .info {
+        padding: 1rem 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .product .product-content .item .info p span{
+        font-size: 2rem;
+    }
+
+    .product .product-content .item .buy a {
+        margin: 0.5rem auto;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+
+    .product h2 em:first-child:before{
+        content: " ";
+        display: table;
+    }
+
+    .product .product-content .item h3 {
+        padding-top: 1rem;
+    }
+
+    .product .product-content .item h3 em {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+
+    .product .product-content .item .info {
+        float: right;
+        width: 70%;
+        padding: 1rem 0;
+        border: none;
+    }
+
+    .product .product-content .item .info p {
+        font-size: 1.8rem;
+    }
+
+    .product .product-content .item .buy {
+        float: none;
+        clear: both;
+        width: 100%;
+        padding: 1rem 0 2rem;
+    }
+
+    .product .product-content .item .buy a {
+        margin-top: 0;
+        max-width: 26rem;
+    }
+
+}
+
 /* 底部导航 */
 .footer {
     padding: 3rem 0;
@@ -482,6 +720,7 @@ header .main ul li a:active {
 .footer-content ul {
     float: left;
     width: 15%;
+    text-align: center;
 }
 
 .footer-content ul li {
@@ -494,6 +733,39 @@ header .main ul li a:active {
     line-height: 3rem;
 }
 
+@media only screen and (max-width: 50em) {
+
+    .footer-content .brand {
+        display: none;
+    }
+    
+    .footer-content ul {
+        width: 20%;
+    }
+
+    .footer-content ul li {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .footer-content ul li.title {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+
+    .footer-content {
+        width: 98%;
+    }
+    
+    .footer-content ul li.title {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+}
 
 /* 底部信息 */
 footer {
